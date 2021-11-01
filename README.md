@@ -35,7 +35,7 @@ Once you are good with this you can run the different main classes:
   ```
   
 - `CreditCardFraudExample.class`
-To retry make sur the credit card dataset is rebuilt by merging all the parts from 1 to 4
+To retry make sure the credit card dataset is rebuilt by merging all the parts from 1 to 4
 ```
   // threshold = 0.50999999999999996
   // =========================================

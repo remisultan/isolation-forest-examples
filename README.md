@@ -5,7 +5,7 @@ based on my [java-ml](https://github.com/remisultan/java-ml)
 
 ## Requirements
 
-- JDK16+
+- JDK17+
 
 ## Getting started
 
@@ -72,4 +72,32 @@ To retry make sure the credit card dataset is rebuilt by merging all the parts f
   10 and 3. (See PcaKDDCUP99.class)
   We get very good results on the 3-feature reduced dataset with a threshold of 0.6
   and a desired TPR of at least 0.8 while keeping our FPR low.
+```
+
+- `ExtendedHttpDatasetExample.class`
+
+```
+     // PCA dataset of 3 features
+  // Dataset Split of 0.7
+  // Desired TPR 0.9
+  // threshold = 0.6329999999999997
+  // ========================================
+  //                TPR ║                 FPR
+  // ========================================
+  // 0.9116409537166901 ║ 0.02363391655450875
+  // ========================================
+
+  // PCA dataset of 10 features
+  // Dataset Split of 0.7
+  // Desired TPR 0.9
+  // threshold = 0.6159999999999997
+  // ========================================
+  //                TPR ║                 FPR
+  // ========================================
+  // 0.9092261904761905 ║ 0.03470133218736571
+  // ========================================
+
+  If we compare the with regular IsolationForests, we see that the FPR does not change much whereas we have better
+  TPR. 
+
 ```

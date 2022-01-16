@@ -11,20 +11,19 @@
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <slf4j-simple.version>1.7.21</slf4j-simple.version>
   </properties>
-
-  <repositories>
-    <repository>
-      <id>release.artifactory.rsultan.org</id>
-      <url>https://archiva.rsultan.org/repository/internal</url>
-    </repository>
-  </repositories>
 
   <dependencies>
     <dependency>
       <groupId>org.rsultan</groupId>
       <artifactId>java-ml</artifactId>
-      <version>2.2.2</version>
+      <version>3.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j-simple.version}</version>
     </dependency>
   </dependencies>
 </project>

@@ -1,7 +1,8 @@
 # Isolation forest example
 
 This repository intends to show the performance of the Isolation Forest method on a few datasets
-based on my [java-ml](https://github.com/remisultan/java-ml)
+based on my [java-ml](https://github.com/remisultan/java-ml).
+Make sure to build the project above with the correct version before running this.
 
 ## Requirements
 

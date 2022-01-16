@@ -32,9 +32,9 @@ public class HttpDatasetExample {
     var df = Dataframes.csvTrainTest(args[0], ",", "\"", false);
 
     TrainTestDataframe dfTrainTest = Dataframes.trainTest(df.getColumns()).setSplitValue(0.7);
-    IsolationForest model = new IsolationForest(200);
+    IsolationForest model = new IsolationForest(10);
     var evaluator = new TPRThresholdEvaluator("c3", "anomalies")
-        .setDesiredTPR(0.7)
+        .setDesiredTPR(0.9)
         .setLearningRate(0.001);
     Double threshold = evaluator.evaluate(model, dfTrainTest);
     System.out.println("threshold = " + threshold);
